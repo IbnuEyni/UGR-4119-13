@@ -1,0 +1,131 @@
+.footer{
+    background-color: rgb(20, 20, 46);
+    width: 100%;
+    bottom: 0; 
+    color: beige;
+    padding: 2em 0 2em;
+    font-size: 1em;
+    line-height: 20px;
+}
+.footer-row{
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+.footer-col{
+    flex: 33%;
+    margin-bottom:0.5em;
+}
+.footer-col-logo-img{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    padding: 0.25em;
+}
+.footer-col-icons{
+    font-size: 20px;
+}
+.footer-col-icons a{
+    text-decoration: none;
+    color: #087777;
+    margin-left: 1em;
+    list-style: none;
+}
+
+.footer-col-ul{
+    list-style: none;
+}
+.footer-col-ul-li{
+    text-decoration: none;
+    margin-top: 2em;
+    color: rgb(146, 128, 224);
+}
+.footer-col-ul-li:hover {
+    color: #e49494;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+.footer-col-icons-link:hover {
+    color: #e4d4d4;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+.footer-col-heading{
+    width: fit-content;
+    margin-bottom: 1em;
+    /* position: relative; */
+}
+.footer-col-form{
+    padding-bottom: 1em;
+    align-items: center;
+}
+.footer-col-form-name,
+.footer-col-form-msg{
+    margin-top: 1em;
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:  #a2aab9;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color:  #425e5e;
+    width: 22em;
+    padding: 1em 0 1em;
+}
+.footer-col-form-msg{
+    height: 100px;
+    margin-bottom: 20px;
+    }
+.footer-col-form-btn{
+    border-radius: 10px;
+    background-color:  #477592;
+    color: #cfa0a0;
+    padding: 10px 40px;
+    font-weight: bold;
+    float: left;
+    margin: 0 8em 0;
+}
+.footer-col-form-btn-txt{
+    color: rgb(167, 17, 17);
+    text-decoration: none;
+}
+
+@media (max-width: 770px) {
+    .footer{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-col-form-input, 
+    .footer-col-form-msg{
+        width: 25vw;
+    }
+
+    .footer-col-form-btn{
+        padding: 10px 35px;
+    }
+}
+@media (max-width: 480px) {
+.footer{
+    padding: 30px;
+    }
+
+
+.footer-col-form-input, 
+.footer-col-form-msg{
+    width: 100vw;
+}
+.footer-col-form-btn{
+    float: none;
+    }
+}
+
+
