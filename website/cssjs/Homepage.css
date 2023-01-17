@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../image/shonke-village3.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    margin-top: 1em;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .navbar ul li a:hover{
+    text-decoration: none;
+    color: rgb(165, 196, 196);
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(36, 75, 36);
+    }
+    .text-box {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: rgb(226, 236, 240);
+      }
+  
+  .text-box_header {
+    font-size: 70px;
+    margin-top: 80px;
+    }
+    
+    .text-box_para {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: rgb(174, 151, 196);
+    }
+    
+  
+.Tour{
+    background: linear-gradient(120deg rgb(12, 12, 58) rgb(126, 64, 64));
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .tour-region {
+    color: rgb(2, 51, 35);
+    font-size: 2em;
+    font-weight: 900;
+    padding: 0 10vw;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  
+  .tour-row {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .tour-row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tour-col {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+  }
+  
+  .tour-col_info{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .tour-col_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tour-col_heading {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #110b0b;
+    right: 100px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  .tour-col_btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: rgb(104, 93, 93);
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .tour-col:hover .tour-col_btn {
+    opacity: 1;
+  }
+  .tour-col_btn:hover {
+    background: #210f61;
+    color: rgb(255, 255, 255);
+  }
+  .tour-col_link{
+    text-decoration: none;
+    color: white;
+  }
+  .tour-col_txt {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  .collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  
+  .collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about_heading{
+    margin-top: 3em;
+    display: block;
+    font-size: 2em;
+    color: rgb(62, 62, 196);
+  }
+  .about_us{
+    background: linear-gradient(60deg rgb(78, 236, 78) rgb(106, 106, 240));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-left{
+    display: inline-block;
+    margin: 3em 0 2em;
+  }
+  .abt-img{
+    width: 40em;
+    height:40em;
+    margin-right: 3em;
+  }
+  .about_right{
+    display: inline-block;
+    margin: 3em 5em 2em;
+    place-items: center;
+  }
+  .about-right_header{
+    color: #023833;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    font-size: 1.75em;
+  }
+  .abt_p{
+    width: auto;
+    margin-left: 2em;
+    margin-top: 15em;
+    bottom: 20em;
+    text-align: center;
+  }
+  @media (max-width: 1000px){
+    .logo{
+    float:none;
+    width: 15%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    }
+    .navbar ul {
+    width: 100%;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    top: 35%;
+    float: none;
+    }
+    .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    }
+    .navbar ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    
+    }
+    .text-box_header{
+    font-size: 2.85em;
+    }
+    .text-box_para{
+    font-size: 18px;
+    }
+    }
+    @media (max-width: 720px){
+    .logo{
+    float:none;
+    left: auto;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    }
+    .navbar ul {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 20%;
+    left: 0.25px;
+    float: none;
+    margin: 2em 0 0;
+    
+    }
+    .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0%;
+    margin-left: 7px;
+    }
+    .navbar ul li a{
+    font-size: 11px;
+    
+    }
+    .text-box_header{
+    font-size: 1.8em;
+    }
+    .text-box_para{
+    font-size: 14px;
+    }
+    }
+  @media (max-width: 800px){
+    .about{
+        width: 100%;
+    }
+    .abt-left{
+      width: 300px
+    }
+    .abt-img{
+        float: none;
+        max-width: 24em;
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+      .abt_p{
+        max-width: fit-content;
+        margin-left: 1em;
+      }
+    }
+  @media(max-width: 750px){
+    .about_us{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .about_right{
+        display: inline-block;
+        margin: 0 5em 2em;
+        place-items: center;
+      }
+      .about-right_header{
+        color: #023833;
+        margin-top: 0.5em;
+        margin-bottom: 0.25em;
+        font-size: 1.75em;
+      }
+  }
