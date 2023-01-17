@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', 'snas-serif';
+    box-sizing: border-box;
+}
+.body {
+    max-width: 1366px;
+    margin: auto;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup_page{
+    background-image:url(../image/Sof-Omar.png);
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    height:max-content;
+    display: flex;
+    justify-content: center;
+
+}
+.sign-up-form{
+    margin-top:8em;
+    width: 35em;
+    background: linear-gradient(90deg,#e5e776, #7fe742);
+    border-radius: 1em;
+    align-self: center;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;  
+    height: 45em;
+    padding: 2em, 0, 4em;
+    border-style: 1px solid red;
+}
+.title{
+    font-size: 2em;
+    color: rgb(30, 30, 83);
+    padding: 1em, 0, 1em;
+    line-height: 2em;
+    margin-bottom: 0.75em;
+    border-bottom: 0.5px solid rgb(227, 238, 226)
+}
+.text_p{
+    font-size: 1.4em;
+    color: rgb(114, 62, 4);
+}
+.login_links{
+    margin: 1em 5em 1em 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.login_btn{
+    font-size: 0.8em;
+    margin: 0.5em 0;
+    padding: 0.75em 2em;
+    border-color: transparent;
+    background-color: #096cdd; 
+    border-radius: 1em;
+}
+.google-login_btn{
+    font-size: 0.8em;
+    margin: 0.5em 0;
+    padding: 0.75em 2em;
+    border-color: transparent;
+    background-color: #fd1f1f; 
+    border-radius: 1em;
+}
+.sign-up_format{
+    margin: 0.15em 0;
+    padding: 0 2.5em;
+}
+.sign-up_field, label{
+    display: block;
+}
+.sign-up_field{
+    width: 100%;
+    padding: 1.25em 1em;
+    height: 1em;
+    font-size: 1em;
+    border: none;
+    background: white;
+    outline: none;
+}
+label{
+    left: 5px;
+    color:#041b2b;
+    font-size: 16px;
+    pointer-events: none;
+    text-align: left;
+}
+.register_link{
+    width: 100%;
+    margin: 1.5em 0;
+}
+.regiter_link_btn{
+    background-color: #0b9265;
+    border-style: none;
+    border-radius: 25px;
+    padding: 0.85em 2.5em;
+}
+.register_text{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.sign_in_link_btn{
+    background-color: #096cdd;
+    border-style: none;
+    border-radius: 35px;
+    padding: 0.85em 5.5em;
+}
+.sign_in_text{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+@media(max-width: 600px){
+    .sign-up-form{
+        width: 100vw;
+    }
+}
